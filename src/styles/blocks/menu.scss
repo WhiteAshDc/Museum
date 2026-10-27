@@ -125,12 +125,6 @@
     }
   }
 
-  &__nav .nav__link {
-    @include on-desktop {
-      text-align: left;
-    }
-  }
-
   @media (prefers-reduced-motion: reduce) {
     .page__menu {
       transition: none;
@@ -155,5 +149,11 @@
     font-weight: 500;
     line-height: 100%;
     color: rgba(255, 255, 255, 1);
+
+    @include on-desktop {
+      .menu__nav & {
+        text-align: left;
+      }
+    }
   }
 }
