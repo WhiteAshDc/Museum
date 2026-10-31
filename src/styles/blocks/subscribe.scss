@@ -96,36 +96,37 @@
       width: 50%;
     }
 
-    &::after {
-      cursor: pointer;
-      content: '>';
+  }
 
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
+  &__clear {
+    cursor: pointer;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
 
-      width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      font-size: 16px;
-      font-weight: bold;
-      color: rgba(0, 0, 0, 1);
+    width: 60px;
+    border: 0;
 
-      background-color: rgba(241, 74, 39, 1);
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
 
-      @include on-tablet {
-        right: auto;
-        left: calc(100% + 16px);
-        width: 70px;
-      }
+    background-color: rgba(241, 74, 39, 1);
 
-      @include on-desktop {
-        left: calc(100% + 30px);
-      }
+    @include on-tablet {
+      right: auto;
+      left: calc(100% + 16px);
+      width: 70px;
+    }
+
+    @include on-desktop {
+      left: calc(100% + 30px);
     }
   }
 }

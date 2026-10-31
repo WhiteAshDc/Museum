@@ -206,7 +206,7 @@
               <div class="events__item">
                 <div class="events__picture">
                   <img
-                    src="/src/images/events/peacock.png "
+                    src="/src/images/events/peacock.png"
                     alt="exhibition"
                     class="events__image"
                   />
@@ -330,19 +330,24 @@
                 method="post"
                 class="subscribe__form"
               >
-                <label
-                  class="subscribe__email"
-                  for="subscribe__email"
-                >
+                <div class="subscribe__email">
                   <input
                     class="subscribe__em"
                     type="email"
                     name="email"
                     id="subscribe__email"
                     placeholder="E-mail"
+                    aria-label="E-mail"
                     required
                   />
-                </label>
+                  <button
+                    class="subscribe__clear"
+                    type="reset"
+                    aria-label="Очистити адресу електронної пошти"
+                  >
+                    &gt;
+                  </button>
+                </div>
               </form>
             </div>
           </section>

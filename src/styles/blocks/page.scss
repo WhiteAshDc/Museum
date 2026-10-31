@@ -2,6 +2,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+
+  &:has(.page__menu:target) {
+    overflow-y: hidden;
+  }
 }
 
 .page {
@@ -25,6 +30,8 @@ html {
     left: 0;
     transform: translateY(-100%);
 
+    max-height: 100vh;
+
     opacity: 0;
     box-shadow: 0 0 0 100vmax rgba(80, 80, 80, 0.45);
 
@@ -35,6 +42,7 @@ html {
     &:target {
       pointer-events: all;
       transform: translateY(0);
+      min-height: min(400px, 100vh);
       opacity: 1;
     }
   }
